@@ -1,0 +1,56 @@
+@import url("cores.css");
+@import url("global.css");
+@import url("tipografia.css");
+
+body {
+  height:100vh;
+  display:flex;
+  place-content:center;
+  place-items:center;
+  background-color:var(--cl-03);
+  padding:30px;
+}
+
+main {
+  max-width:420px;
+  width:100%;
+  /* border:5px solid var(--cl-01); */
+}
+
+main img {
+  width:100%;
+  aspect-ratio:1 /1;
+  /* max-height:235px; */
+  object-fit:cover;
+  object-position:center;
+}
+
+main h1 span {
+  color:var(--cl-04);
+  font-weight:Bold;
+}
+
+main section {
+  padding:32px;
+}
+main section h1 {
+  color:var(--cl-01);
+}
+
+main section h1::before {
+  content:"";
+  margin-bottom:5px;
+  display:block;
+  width:46px;
+  height:5px;
+  background-color:var(--cl-01);
+} 
+
+.inputs-area {
+  margin-top:32px;
+  display:flex;
+  flex-direction:row;
+  place-items:star space-between;
+  gap:0px 5px;
+}
+
